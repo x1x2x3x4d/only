@@ -1,0 +1,108 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local _1 = Instance.new("TextLabel")
+local _2 = Instance.new("TextLabel")
+local _3 = Instance.new("TextLabel")
+local label = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local FLYBUTTON = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local FLYBUTTON_2 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.Position = UDim2.new(0.244482175, 0, 0.139062494, 0)
+Frame.Size = UDim2.new(0, 666, 0, 461)
+Frame.Active = true
+Frame.Draggable = true
+
+UICorner.Parent = Frame
+
+_1.Name = "1"
+_1.Parent = Frame
+_1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1.BackgroundTransparency = 1.000
+_1.Position = UDim2.new(0.6996997, 0, 0.123644255, 0)
+_1.Size = UDim2.new(0, 200, 0, 50)
+_1.Font = Enum.Font.SourceSans
+_1.Text = "Scripts"
+_1.TextColor3 = Color3.fromRGB(255, 255, 255)
+_1.TextSize = 27.000
+
+_2.Name = "2"
+_2.Parent = Frame
+_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_2.BackgroundTransparency = 1.000
+_2.Position = UDim2.new(-0.00150150154, 0, 0.123644255, 0)
+_2.Size = UDim2.new(0, 200, 0, 50)
+_2.Font = Enum.Font.SourceSans
+_2.Text = "ONLY"
+_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+_2.TextSize = 27.000
+
+_3.Name = "3"
+_3.Parent = Frame
+_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_3.BackgroundTransparency = 1.000
+_3.Position = UDim2.new(0.34984985, 0, 0.123644255, 0)
+_3.Size = UDim2.new(0, 200, 0, 50)
+_3.Font = Enum.Font.SourceSans
+_3.Text = "Customs"
+_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+_3.TextSize = 27.000
+
+label.Name = "label"
+label.Parent = Frame
+label.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+label.Position = UDim2.new(-0.000262573361, 0, -0.00193533301, 0)
+label.Size = UDim2.new(0, 666, 0, 39)
+
+UICorner_2.Parent = label
+
+TextLabel.Parent = label
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0287910923, 0, -0.15384616, 0)
+TextLabel.Size = UDim2.new(0, 628, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Jus Hack"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 41.000
+
+FLYBUTTON.Name = "FLYBUTTON"
+FLYBUTTON.Parent = Frame
+FLYBUTTON.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+FLYBUTTON.Position = UDim2.new(0.728228211, 0, 0.268980473, 0)
+FLYBUTTON.Size = UDim2.new(0, 162, 0, 50)
+FLYBUTTON.Font = Enum.Font.SourceSans
+FLYBUTTON.Text = "Fly"
+FLYBUTTON.TextColor3 = Color3.fromRGB(49, 0, 0)
+FLYBUTTON.TextSize = 23.000
+FLYBUTTON.MouseButton1Down:Connect(function()
+	--soon
+end)
+
+UICorner_3.Parent = FLYBUTTON
+
+FLYBUTTON_2.Name = "FLYBUTTON"
+FLYBUTTON_2.Parent = Frame
+FLYBUTTON_2.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+FLYBUTTON_2.Position = UDim2.new(0.728228211, 0, 0.422993481, 0)
+FLYBUTTON_2.Size = UDim2.new(0, 162, 0, 50)
+FLYBUTTON_2.Font = Enum.Font.SourceSans
+FLYBUTTON_2.Text = "Brookhaven"
+FLYBUTTON_2.TextColor3 = Color3.fromRGB(49, 0, 0)
+FLYBUTTON_2.TextSize = 23.000
+FLYBUTTON_2.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+end)
+
+UICorner_4.Parent = FLYBUTTON_2
